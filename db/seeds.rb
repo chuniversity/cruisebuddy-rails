@@ -24,15 +24,16 @@ user_profile = UserProfile.find_or_create_by!(ex_email: user.email, first_name: 
 
 cruise_line = CruiseLine.find_or_create_by!(name: Faker::Lorem.words(number: 4).map{|w| w.capitalize}.join(' '))
 p cruise_line
-ship = Ship.find_or_create_by!(name: Faker::Lorem.word.capitalize, cruise_line: cruise_line)
-p ship
-p ShipImage.find_or_create_by!(url: SHIPIMAGE_URL, ship: ship)
+ships = 10.times.map{ Ship.find_or_create_by!(name: Faker::Lorem.word.capitalize, cruise_line: cruise_line)}
+ships.each {|ship| cruise_line.ships << ship}
+cruise_line.ships.each {|ship| p ship}
+ship_images = ships.map{|ship| ShipImage.find_or_create_by!(url: SHIPIMAGE_URL, ship: ship)}
 
-review = Review.find_or_create_by!(user_profile: user_profile, ship: ship, body: Faker::Lorem.paragraph, rating: fake_rating )
-p review
-comment = Comment.create!(review: review, user_profile: user_profile, body:Faker::Lorem.sentence)
-p comment
-p Helpful.find_or_create_by!(review: review, user_profile: user_profile)
+reviews = ships.map{|ship| Review.find_or_create_by!(user_profile: user_profile, ship: ship, body: Faker::Lorem.paragraph, rating: fake_rating )}
+p reviews
+comments = reviews.map{|review| Comment.create!(review: review, user_profile: user_profile, body:Faker::Lorem.sentence)}
+p comments
+helpfuls = reviews.map{|review| Helpful.find_or_create_by!(review: review, user_profile: user_profile)}
 
 port = Port.find_or_create_by!(name: Faker::Lorem.word.capitalize)
 p port
@@ -44,4 +45,13 @@ p region
 start, end_ = fake_start_and_end
 voyage = Voyage.find_or_create_by!(start: start, end: end_, region: region)
 p voyage
+voyage_port = VoyagePort.find_or_create_by!(port: port, voyage: voyage)
+itineraries = ships.map{|ship| Itinerary.find_or_create_by!(name: Faker::Lorem.word.capitalize, ship: ship, voyage_port: voyage_port)}
+itineraries.each do |itinerary|
+    p itinerary
+    p itinerary.voyage_port.voyage
+    p itinerary.voyage_port.voyage.region
+    p itinerary.voyage_port.port
+end
+
 puts "PASSED"
