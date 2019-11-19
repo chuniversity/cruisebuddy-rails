@@ -11,6 +11,12 @@
 def fake_rating
     (1..5).to_a.sample
 end
+
+def fake_start_and_end
+    start = (1..21).to_a.sample
+    finish = start + [4, 7, 10, 14].sample
+    [Faker::Date.forward(days: start), Faker::Date.forward(days: finish)]
+end
 SHIPIMAGE_URL = "https://loremflickr.com/300/300/ship"
 user = User.create!(email: 'example@mail.com' , password: '123123123' , password_confirmation: '123123123')
 p user
@@ -27,4 +33,15 @@ p review
 comment = Comment.create!(review: review, user_profile: user_profile, body:Faker::Lorem.sentence)
 p comment
 p Helpful.find_or_create_by!(review: review, user_profile: user_profile)
+
+port = Port.find_or_create_by!(name: Faker::Lorem.word.capitalize)
+p port
+
+port_image = PortImage.find_or_create_by!(url: SHIPIMAGE_URL, port: port)
+region = Region.find_or_create_by!(name: Faker::Address.country, description: Faker::Lorem.paragraph)
+p region
+
+start, end_ = fake_start_and_end
+voyage = Voyage.find_or_create_by!(start: start, end: end_, region: region)
+p voyage
 puts "PASSED"
