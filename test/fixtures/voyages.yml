@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start: 2019-11-20 20:05:37
+  end: 2019-11-20 20:05:37
+  region: one
+
+two:
+  start: 2019-11-20 20:05:37
+  end: 2019-11-20 20:05:37
+  region: two
