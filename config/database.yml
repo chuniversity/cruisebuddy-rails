@@ -20,7 +20,6 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: postgres://postgres:96eb1bd62c29c1cb7dcccfebc9ba30cd@apps.selfip.com:5436/d76ac598
 
 development:
   <<: *default
