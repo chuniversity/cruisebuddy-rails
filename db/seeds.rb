@@ -21,9 +21,30 @@ SHIPIMAGE_URL = "https://loremflickr.com/300/300/ship"
 user = User.create!(email: 'example@mail.com' , password: '123123123' , password_confirmation: '123123123')
 p user
 user_profile = UserProfile.find_or_create_by!(ex_email: user.email, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, username: Faker::Internet.username)
-
+# Real cruiselines data
+cruiselines = ['Carnival', 'Royal Caribbean', 'Disney Cruise']
+cruiselines.each do |cruiseline|
+  CruiseLine.find_or_create_by!(name: cruiseline)
+end
+#Fake cruiseline data
 cruise_line = CruiseLine.find_or_create_by!(name: Faker::Lorem.words(number: 4).map{|w| w.capitalize}.join(' '))
 p cruise_line
+
+# Real ship data
+carnivalships = ["Carnival Horizon", "Carnival Vista", "Carnival Breeze", "Carnival Magic", "Carnival Dream"]
+royalcaribbean = ['Wonder of the Seas', 'Odyssey of the Seas', 'Symphony of the Seas', 'Harrmony of the Seas', 'Oasis of the Seas', 'Allure of the Seas']
+disneycruise = ['Disney Magic', 'Disney Wonder', 'Disney Dream', 'Disney Fantasy']
+
+carnivalships.each do |ship|
+  Ship.find_or_create_by!(name: ship, cruise_line_id: 1)
+end
+royalcaribbean.each do |ship|
+  Ship.find_or_create_by!(name: ship, cruise_line_id: 2)
+end
+disneycruise.each do |ship|
+  Ship.find_or_create_by!(name: ship, cruise_line_id: 3)
+end
+#Fake data ships
 ships = 10.times.map{ Ship.find_or_create_by!(name: Faker::Lorem.word.capitalize, cruise_line: cruise_line)}
 ships.each {|ship| cruise_line.ships << ship}
 cruise_line.ships.each {|ship| p ship}
