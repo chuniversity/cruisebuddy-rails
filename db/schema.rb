@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_19_232001) do
+ActiveRecord::Schema.define(version: 2019_11_25_013553) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,33 +40,8 @@ ActiveRecord::Schema.define(version: 2019_11_19_232001) do
     t.index ["user_profile_id"], name: "index_helpfuls_on_user_profile_id"
   end
 
-  create_table "itineraries", force: :cascade do |t|
-    t.string "name"
-    t.bigint "ship_id", null: false
-    t.bigint "voyage_port_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["ship_id"], name: "index_itineraries_on_ship_id"
-    t.index ["voyage_port_id"], name: "index_itineraries_on_voyage_port_id"
-  end
-
-  create_table "port_images", force: :cascade do |t|
-    t.string "url"
-    t.bigint "port_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["port_id"], name: "index_port_images_on_port_id"
-  end
-
   create_table "ports", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "regions", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
+    t.string "port_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -95,6 +70,8 @@ ActiveRecord::Schema.define(version: 2019_11_19_232001) do
     t.bigint "cruise_line_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "description"
+    t.text "url"
     t.index ["cruise_line_id"], name: "index_ships_on_cruise_line_id"
   end
 
@@ -115,36 +92,23 @@ ActiveRecord::Schema.define(version: 2019_11_19_232001) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "voyage_ports", force: :cascade do |t|
-    t.bigint "port_id", null: false
-    t.bigint "voyage_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["port_id"], name: "index_voyage_ports_on_port_id"
-    t.index ["voyage_id"], name: "index_voyage_ports_on_voyage_id"
-  end
-
   create_table "voyages", force: :cascade do |t|
-    t.datetime "start"
-    t.datetime "end"
-    t.bigint "region_id", null: false
+    t.text "description"
+    t.date "departure_date"
+    t.date "arrival_date"
+    t.integer "duration"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["region_id"], name: "index_voyages_on_region_id"
+    t.integer "departure_port_id", default: 1
+    t.integer "price"
   end
 
   add_foreign_key "comments", "reviews"
   add_foreign_key "comments", "user_profiles"
   add_foreign_key "helpfuls", "reviews"
   add_foreign_key "helpfuls", "user_profiles"
-  add_foreign_key "itineraries", "ships"
-  add_foreign_key "itineraries", "voyage_ports"
-  add_foreign_key "port_images", "ports"
   add_foreign_key "reviews", "ships"
   add_foreign_key "reviews", "user_profiles"
   add_foreign_key "ship_images", "ships"
   add_foreign_key "ships", "cruise_lines"
-  add_foreign_key "voyage_ports", "ports"
-  add_foreign_key "voyage_ports", "voyages"
-  add_foreign_key "voyages", "regions"
 end
