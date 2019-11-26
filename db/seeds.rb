@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # p User.find_or_create_by!(email: 'example@mail.com' , password: '123123123' , password_confirmation: '123123123')
-
-require('seeds_data.rb')
+require Rails.root.join('db/seeds_lib', 'seeds_data.rb')
+require Rails.root.join('db/seeds_lib', 'voyage_record_generation')
 
 def fake_rating
     (1..5).to_a.sample
@@ -31,15 +31,13 @@ user_profile = UserProfile.find_or_create_by!(ex_email: user.email, first_name: 
   UserProfile.find_or_create_by!(ex_email: user.email, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, username: Faker::Internet.username)
 end
 
-#Cruise Line
-
-
-cruiselines.each do |cruiseline|
+#Cruise lines into db
+CRUISELINES.each do |cruiseline|
   CruiseLine.find_or_create_by!(name: cruiseline)
 end
 
-#Ships
-ships_collection.each do |cruise_line_id, ships_ids|
+#Ships into db
+SHIPS_COLLECTION.each do |cruise_line_id, ships_ids|
   ships_ids.each do |ship_id, ship_data|
     Ship.find_or_create_by!(
       name: ship_data[:ship_name], 
@@ -50,76 +48,17 @@ ships_collection.each do |cruise_line_id, ships_ids|
   end
 end
 
-
-#list of ports
-regions = {departing_ports: %w{ Miami },
-           europe:  %w{ London Lisbon Rome Sicily Venice Split Athens Crete Israel Alexandria },
-           caribbean: %w{ Puerto\ Rico Jamaica Bahamas Bermuda Key\ West US\ Virgin\ Islands},
-}
-#Inserting port list to table
-regions.each do |region, ports|
+#Ports into db
+REGIONS.each do |region, ports|
   ports.each do |port|
     Port.find_or_create_by!(port_name: port)
   end
 end 
 
-#list of ports dependent on duration of cruise
-visited_ports = { 
-                european:  {
-                            21 => %w{ London Lisbon Rome Sicily Venice Split Athens Crete Israel Alexandria },
-                            14 => %w{ London Lisbon Rome Sicily Venice Split Athens }
-                           },
-                caribbean: {
-                            14 => %w{ Puerto\ Rico Jamaica Bahamas Bermuda Key\ West US\ Virgin\ Islands},
-                            10 => %w{ Puerto\ Rico Jamaica Bahamas Bermuda Virgin\ Islands},
-                            7  => %w{ Puerto\ Rico Jamaica Bahamas Bermuda},
-                            3  => %w{ Jamaica Bahamas Bermuda},
-                          }
-                }
-
 #Voyage dates
-def voyage_date
-  start = (1..30).to_a.sample
-  duration = [3, 7, 10, 14, 21].sample
-  arrival = start + duration
-  [Faker::Date.forward(days: start), duration, Faker::Date.forward(days: arrival)]
-end
-
-#price
-def price (duration)
-  if duration <= 10 then
-    (200..220).to_a.sample * duration
-  else
-    (251..271).to_a.sample * duration
-  end
-end
-
-#Cruise description
-def description(duration)
-  region = ["european", "caribbean"].sample
-  if duration < 14 then
-    ["#{duration} day Caribbean Cruise", region]
-  else
-    ["#{duration} day #{region.capitalize} Cruise", region]
-  end  
-end
-
-#Inserting voyage data
-(1..30).each do |i|
-  start, duration, arrival = voyage_date
-  price = price(duration)
-  description, region = description(duration)
-
-  Voyage.find_or_create_by!(
-    description: description,
-    departure_date: start,
-    arrival_date: arrival,
-    duration:duration,
-    price:price
-  )
-end
-
-
+voyage_data((1..5),2,[10,14],'Miami') # for Carnival Cruise
+voyage_data((6..11),1,[14,21],'Dover') # for Royal Caribbean
+voyage_data((15..15),3,[3,7],'Miami') # for Disney
 
 #Reviews
 (1..100).each do |i|

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_25_013553) do
+ActiveRecord::Schema.define(version: 2019_11_26_221350) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -99,8 +99,10 @@ ActiveRecord::Schema.define(version: 2019_11_25_013553) do
     t.integer "duration"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "departure_port_id", default: 1
+    t.string "departure_port", default: "1"
     t.integer "price"
+    t.text "ports"
+    t.integer "ship_id"
   end
 
   add_foreign_key "comments", "reviews"

@@ -1,6 +1,6 @@
-cruiselines = ['Carnival', 'Royal Caribbean', 'Disney Cruise']
+CRUISELINES = ['Carnival', 'Royal Caribbean', 'Disney Cruise']
 
-ships_collection = {
+SHIPS_COLLECTION = {
   1 => {
         1 => {ship_name: 'Carnival Horizon', ship_url:  'https://www.carnival.com/~/media/Images/Ships/HZ/carnival-horizon/heros/carnival-horizon-standard-ship.jpg'
              },
@@ -37,4 +37,9 @@ ships_collection = {
         15 => {ship_name: 'Disney Fantasy', ship_url:  'http://www.disneyholidays.co.uk/disney-cruise-line/images/ships/mobile/disney-dream.jpg'
              }                    
        }
+}
+
+REGIONS = {departing_ports: %w{ Miami },
+           europe:  %w{ London Lisbon Rome Sicily Venice Split Athens Crete Israel Alexandria },
+           caribbean: %w{ Puerto\ Rico Jamaica Bahamas Bermuda Key\ West US\ Virgin\ Islands},
 }
