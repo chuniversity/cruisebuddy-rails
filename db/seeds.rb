@@ -61,12 +61,12 @@ voyage_data((6..11),1,[14,21],'Dover') # for Royal Caribbean
 voyage_data((15..15),3,[3,7],'Miami') # for Disney
 
 #Reviews
-(1..100).each do |i|
+REVIEWS.each do |element|
   Review.find_or_create_by!(
-    body: Faker::Lorem.paragraph(sentence_count: 10),
-    rating: (1..5).to_a.sample,
-    user_profile_id: (1..10).to_a.sample,
-    ship_id: (1..15).to_a.sample
+    body: element[:body],
+    rating: element[:rating],
+    user_profile_id: element[:user_profile_id],
+    ship_id: element[:ship_id]
   )
 end
 puts "PASSED"
