@@ -1,4 +1,4 @@
-CRUISELINES = ['Carnival', 'Royal Caribbean', 'Disney Cruise']
+CRUISELINES = ['Carnival', 'Royal Caribbean', 'Disney']
 
 SHIPS_COLLECTION = {
   1 => {
