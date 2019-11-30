@@ -2,40 +2,85 @@ CRUISELINES = ['Carnival', 'Royal Caribbean', 'Disney Cruise']
 
 SHIPS_COLLECTION = {
   1 => {
-        1 => {ship_name: 'Carnival Horizon', ship_url:  'https://www.carnival.com/~/media/Images/Ships/HZ/carnival-horizon/heros/carnival-horizon-standard-ship.jpg'
-             },
-        2 => {ship_name: 'Carnival Vista', ship_url:  'https://upload.wikimedia.org/wikipedia/commons/b/bb/TRIESTE_NAVI_%2826741027796%29_%28cropped%29.jpg'
-             },
-        3 => {ship_name: 'Carnival Breeze', ship_url: 'https://www.cruisehive.com/wp-content/uploads/2015/08/carnivalbreeze1small.jpg'
-             },
-        4 => {ship_name: 'Carnival Magic', ship_url:  'https://i.imgur.com/lZJ4PxT.jpg'
-             },
-        5 => {ship_name: 'Carnival Dream', ship_url:  'https://images.cruisecritic.com/image/5531/carnival-dream_600x300_21.jpg'
-             }               
+        1 => {
+              ship_name: 'Horizon', 
+              ship_url:  'http://chunis.org/images/ships/horizon1.jpg', 
+              description: "Carnival Horizon – which set sail in April 2018 –  is one of the fleet's newer ships. It accommodates 1,450 crew members and a maximum of 5,101 passengers, and it offers a plethora of amenities for travelers of all ages. Children can ride the SkyRide suspended bike, play at the Dr. Seuss-themed water park and climb the ropes course, while parents can lounge on an adults-only deck and pamper themselves at the Cloud 9 Spa. At night, the whole family can enjoy live performances and lip-syncing competitions.Onboard dining options are also plentiful, with 11 eateries that serve everything from steaks to Italian classics to burgers. Carnival Horizon is the first in Carnival's fleet to offer a teppanyaki-style restaurant and Guy Fieri's Pig & Anchor Smokehouse and Brewhouse. The ship also has a variety of cabins for passengers to choose from, ranging from budget-friendly Interior Staterooms to specialty suites with spa, nautical and Havana themes. Each comes with modern conveniences like a minibar, a flat-screen TV and a Carnival Comfort bed. In 2019-20, Carnival Horizon departs from Miami for voyages throughout the Caribbean."
+        },
+        2 => {
+              ship_name: 'Vista', 
+              ship_url:  'http://chunis.org/images/ships/vista1.jpg', 
+              description: "Introduced in mid-2016, Carnival Vista is one of the cruise line's newest and largest ships, welcoming up to 3,934 passengers and 1,450 crew members. The ship offers unique dining, entertainment and cabin options not found on other ships in the fleet. In addition to staples like kids clubs, an adults-only retreat and a waterpark, new activities include the SkyRide suspended bike course, the first IMAX theater at sea and a Dr. Seuss-inspired library.  Recent passengers were most impressed with the accommodations. Typical cabin categories (Interior, Ocean View, Balcony and Suite) are available, but cruisers recommend splurging on one of the new cabin types: the Family Harbor or Havana staterooms and suites. Those who select Family Harbor cabins receive exclusive 24-hour lounge access with free breakfast and kid-friendly movies and games. Plus, children staying in these rooms enjoy free meals at most specialty restaurants and a free night of babysitting. Havana category rooms cater to adults, with access to a private bar and pool, as well as extra-large outdoor spaces and rainfall showers in suites."
+        },
+        3 => {
+              ship_name: 'Breeze', 
+              ship_url: 'http://chunis.org/images/ships/breeze1.jpg', 
+              description: "The 3,690-passenger Carnival Breeze was introduced in 2012 and last updated in 2017. On board, cruisers will find outdoor activities like a water park and a SportsSquare with games like mini-golf, as well as supervised (and free) age-appropriate programs for kids and teens. While the younger passengers play, adults can relax at the adults-only Serenity retreat, get treatments at the Cloud 9 Spa and sip cocktails at one of the ship's six bars. Carnival Breeze offers a variety of cabin categories, all of which include flat-screen TVs and 24-hour room service. The ship maintains a nearly 1-to-3 crew-to-guest ratio. While some recent cruisers appreciated the family atmosphere, others were disappointed by long lines and wait times during dinner service."
+        },
+        4 => { 
+              ship_name: 'Magic', 
+              ship_url:  'http://chunis.org/images/ships/magic1.jpg', 
+              description: "After launching in 2011, Carnival Magic received 2016 updates that added new restaurants, including a specialty Italian restaurant (for an extra fee) and Guy’s Burger Joint.  Among other firsts, Magic was the world’s first vessel with a ropes course at sea. Guests also have access to other entertainment and activities like mini-golf, a casino, an arcade, live shows, the Punchliner Comedy Club and the WaterWorks water park. Those just looking to relax can book a treatment at the spa or soak in the whirlpools at the Serenity Adult-Only Retreat.  The ship's sheer size (carrying up to 3,690 passengers and 1,367 crew members) also means more versatile dining options. Passengers can pick from an abundance of venues, including two main dining rooms and the expansive Lido buffet. When they aren't eating or exploring the ship, travelers can also kick back in their cabins. While Interior and Ocean View staterooms are more affordable and compact, Balcony and Suite category rooms offer more space and better ocean views."
+        },
+        5 => {
+              ship_name: 'Dream', 
+              ship_url:  'http://chunis.org/images/ships/horizon1.jpg', 
+              description: "Carnival Dream features the Punchliner Comedy Club, nightly stage shows, age-appropriate kids clubs (for ages 2 to 17) and an onboard water park – all hallmarks of the line's 'Fun Ships.' Other family-friendly entertainment includes movies at the Seaside Theatre and the Seuss at Sea program.  Those more interested in relaxing can enjoy the Cloud 9 Spa and the adults-only Serenity Retreat. In terms of lodging, cruisers can stay in budget-friendly Interior staterooms (185 square feet) or splurge for more room (up to an extra 245 square feet) with an Ocean View or Balcony stateroom or Suite. All cabins are appointed with flat-screen TVs and 24-hour room service. The ship added quite a few dining options in its most recent revamp in 2017, including Guy's Burger Joint, BlueIguana Cantina and Bonsai Sushi. Overall, the food quality on the ship gets mixed reviews. Carnival Dream carries 3,646 passengers and offers a nearly 4-to-1 guest-to-crew ratio, so public areas may be crowded and service can slow at peak times. Recent travelers also warned against choosing a room directly above any of the restaurants or bars, as noise travels easily through the walls."
+        }               
         },
   2 => {
-        6 => {ship_name: 'Freedom of the Seas', ship_url:  'https://live.staticflickr.com/2423/3934243662_7a5b0c50a8_b.jpg'
-             },
-        7 => {ship_name: 'Liberty of the Seas', ship_url:  'https://d1xfoqsc632pe4.cloudfront.net/images/dyn/cc/429027094ab7ea4133e1f5.25409721-1254518315.jpg'
-             },
-        8 => {ship_name: 'Symphony of the Seas', ship_url:  'https://clubthrifty.com/wp-content/uploads/2019/08/Symphony-of-the-Seas_Featured-Image.jpg'
-             },
-        9 => {ship_name: 'Harmony of the Seas', ship_url:  'https://images.cruisecritic.com/image/5599/royal-caribbean-harmony-of-the-seas_600x300_21.jpg'
-             },
-        10 => {ship_name: 'Oasis of the Seas', ship_url:  'https://d23n7ahjfnjotp.cloudfront.net/imgs/mobileheaderipad/ship_292_rci_oa_aerials_labadee-2-011f_1024x416_mobhdr.jpg'
-             },
-        11 => {ship_name: 'Allure of the Seas', ship_url:  'https://images.cruisecritic.com/image/5556/royal-caribbean-allure-of-the-seas_600x300_21.jpg'
-             }                                       
+        6 => {
+              ship_name: 'Freedom of the Seas', 
+              ship_url:  'http://chunis.org/images/ships/freedomoftheseas1.jpg', 
+              description: "The newly amplified Freedom of the Seas houses 1,360 crew members and a total of 4,515 passengers. Recent updates include a new pool area with nighttime glow-in-the-dark laser tag, fresh dining venues and more. Other highlights include a surf simulator, a rock climbing wall and an ice skating rink. Adults can spend time at the casino and 10 bars and lounges. Freedom of the Seas houses a three-level main restaurant, several casual eateries (including Johnny Rockets and Ben & Jerry's Ice Cream) and three specialty restaurants (for an extra charge). When it comes to lodging, guests can choose from four categories: Interior, Ocean View, Balcony or Suite. All cabins include minibars and LED TVs. Past cruisers recommend springing for a suite if you're traveling with a group, as such rooms offer extras like private balconies and living areas."
+        },
+        7 => {
+              ship_name: 'Liberty of the Seas', 
+              ship_url:  'http://chunis.org/images/ships/libertyoftheseas1.jpg', 
+              description: "Most recently updated in 2016, Liberty of the Seas houses up to 4,960 guests and 1,360 crew members. Recent cruisers praise the food, which includes four complimentary options and six specialty eateries for an extra fee. The ship also boasts line staples like a surf simulator, a rock climbing wall and an ice skating rink.  When kids aren't playing in the three pools, zooming down the ship's waterslides or going airborne on Tidal Wave, the only boomerang slide at sea, they can mingle at age-specific youth clubs or meet DreamWorks film characters. Meanwhile, adults can grab a cocktail at one of 12 bars and lounges, try their luck at the casino or participate in the Mystery Dinner Theater."
+        },
+        8 => {
+              ship_name: 'Symphony of the Seas', 
+              ship_url:  'http://chunis.org/images/ships/symphonyoftheseas1.jpg',   
+              description: "The 6,680-passenger Symphony of the Seas is one of the newest ships in Royal Caribbean's Oasis fleet. This massive ship – which set sail in 2018 and is the largest cruise ship in the world – has 2,200 crew members and features 18 decks packed with activities.  For heart-pounding fun, travelers will find a surf simulator, an indoor ice skating rink, two 40-foot rock walls, a zip line and a 10-story slide. Meanwhile, relaxation seekers can unwind in the spa, sip cocktails made by robotic bartenders or stroll through the Central Park-inspired neighborhood.  For heart-pounding fun, travelers will find a surf simulator, an indoor ice skating rink, two 40-foot rock walls, a zip line and a 10-story slide. Meanwhile, relaxation seekers can unwind in the spa, sip cocktails made by robotic bartenders or stroll through the Central Park-inspired neighborhood.  Onboard snacks and meals are served at more than 15 quick-service and sit-down eateries. The Main Dining Room is where the ship's traditional, complimentary dinners are provided nightly, but specialty options like a steakhouse, a bistro and a Johnny Rockets outpost are also available. What's more, cruisers can dine at Jamie's Italian, a restaurant helmed by celebrity chef Jamie Oliver. After filling up on gourmet fare, passengers can retreat to their cabins, all of which include work desks, flat-screen TVs and minibars. Guests can choose from 258-square-foot Interior Staterooms, some of which have virtual balconies with real-time views of the ocean, or opt for upgraded cabins with furnished balconies and up to 2,367 square feet of space. Select suites also feature two bedrooms, whirlpool tubs and dining rooms."
+        },
+        9 => {
+              ship_name: 'Harmony of the Seas', 
+              ship_url:  'http://chunis.org/images/ships/harmonyoftheseas1.jpg', 
+              description: "Welcoming up to 6,687 passengers and 2,193 crew members, Harmony of the Seas is one of the largest cruise ships in the world. Launched in 2016, the ship features Royal Caribbean staples like surf simulators and rock climbing walls, as well as innovative amenities like the Ultimate Abyss (a 10-story slide) and three multistory waterslides. Plus, while younger passengers play in the arcade or at age-appropriate clubs, adults can relax at the spa or sip cocktails at multiple bars and lounges. After working up an appetite, guests can choose from 17 dining options. Past cruisers especially praised the multitude of specialty restaurants, which range from Mexican to Japanese fare and require reservations and an additional fee. When it comes to lodging, Harmony of the Seas offers a wide variety of cabin categories, with more than 70 percent of cabins featuring balconies. While Interior staterooms are the most economical choice, those looking for a little more space and luxury should consider upgrading to a Suite, which range from Junior Suites to four-bedroom Family Suites. While all cabins offer flat-screen TVs and minibars, suites include access to a private restaurant, lounge and sun deck." 
+        },
+        10 => {
+              ship_name: 'Oasis of the Seas', 
+              ship_url:  'http://chunis.org/images/ships/oasisoftheseas1.jpg', 
+              description: "The 6,780-passenger Oasis of the Seas saw an extensive refurbishment between September and November 2019, unveiling the line's first dedicated karaoke venue, a live music space with a large dance floor, brand-new dining options (including a barbecue restaurant), three waterslides, new bars and more.  While this ship is not for those seeking secluded spaces, most cruisers say the seven distinct onboard neighborhoods make up for that. The behemoth ship features designer boutiques and larger staterooms than other ships in the fleet. Like other Royal Caribbean vessels, Oasis of the Seas offers four cabin categories: Interior, Ocean View, Balcony and Suite. Interior rooms average about 150 square feet, while Suite category cabins can span anywhere from 287 to 1,524 square feet and include added amenities like Jacuzzis and expansive balconies.  While recent cruisers were impressed with the ship's abundant amenities, they noted that with 2,100 crew members, there aren't many tailored onboard experiences – especially when the ship is filled to capacity. Oasis of the Seas caters to those looking for nonstop onboard action."
+        },
+        11 => {
+              ship_name: 'Allure of the Seas', 
+              ship_url:  'http://chunis.org/images/ships/allureoftheseas1.jpg', 
+              description: "The 6,780-passenger Allure of the Seas, unveiled in 2010, is among the largest cruise ships in the world. There are 2,100 crew members on board to cater to passengers' needs. Along with signature line amenities like rock climbing walls and ice skating rinks, the ship houses seven unique neighborhoods with a variety of activities, shows and dining options.  A recent renovation unveiled new slides and rides on board, as well as reimagined spaces for kids and teens. Other standout features include a zip line that descends nine decks, two surf simulators and a floating version of Central Park with seasonal flower gardens and canopy trees. Plus, with 16 dining options – and a Starbucks at sea – every member of the family will be satisfied.  In terms of lodging, about 65 percent of cabins feature balconies, and all staterooms are appointed with TVs and minifridges. Interior staterooms are the most economical option, but those who splurge on Suites are granted larger balconies and concierge service. Crowd-free areas might be difficult to find due to the outrageous capacity of the ship, but some recent cruisers praise the nonstop activity and entertainment."
+        }                                       
         },
   3 => {
-        12 => {ship_name: 'Disney Magic', ship_url:  'https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2018/08/wegfds47385-624x351.jpg'
-             },
-        13 => {ship_name: 'Disney Wonder', ship_url:  'https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2016/11/ndwe4796785711.jpg'
-             },
-        14 => {ship_name: 'Disney Dream', ship_url:  'https://www.picturethemagic.com/wp-content/uploads/2018/07/disney-dream-ship-castaway-cay-flickr.jpg'
-             },
-        15 => {ship_name: 'Disney Fantasy', ship_url:  'http://www.disneyholidays.co.uk/disney-cruise-line/images/ships/mobile/disney-dream.jpg'
-             }                    
+        12 => {
+              ship_name: 'Magic', 
+              ship_url:  'http://chunis.org/images/ships/disneymagic1.jpg', 
+              description: "The 2,713-passenger Disney Magic is the oldest ship in the Disney Cruise Line fleet (it first launched in 1998) but it received some updates in 2018, including the 'Rapunzel's Royal Table' dining experience. The ship features family favorites such as the AquaDuck waterslide, the Bibbidi Bobbidi Boutique dress-up shop and Edge, an interactive game center for tweens.  Disney Magic features diverse entertainment, including live shows, an open-air Wide World of Sports deck, three pools and a splash area for children younger than 3. Unique to the Magic is the teens-only Chill Spa. When it comes to dining, the ship offers eight eateries, including an adults-only specialty restaurant and buffet options. Recent cruisers gave the food quality mixed reviews.  In terms of lodging, 70 percent of cabins offer ocean views or verandas. All cabins are outfitted with flat-screen TVs, sitting areas and bathrooms with separate showers and tubs. Suites include extra perks such as concierge service and media libraries. Past cruisers noted that the service on this ship is up to Disney's standards, but so is the price tag."
+        },
+        13 => {
+              ship_name: 'Wonder', 
+              ship_url:  'http://chunis.org/images/ships/disneywonder1.jpg', 
+              description: "The 2,713-passenger Disney Wonder first debuted in 1999 and was updated in fall 2016, rolling out new family-oriented amenities and entertainment offerings like meet and greets with Disney characters and Frozen, A Musical Spectacular.  The ship offers plenty of onboard activities, with 10 designated family areas, six youth clubs and seven adults-only spaces. While younger passengers play at age-appropriate clubs, grown-ups can relax at the adults-only Quiet Cove Pool. Infants and toddlers in swim diapers are limited to specified kids' wet play and splash areas (this is a requirement by the United States Public Health Service, not a Disney-specific rule).  In terms of dining, Disney Wonder offers six options, including one adults-only specialty restaurant. At night, adults can unwind and enjoy After Hours, a section of the ship that features three nightclubs and lounges.  Like the majority of the ship, staterooms are designed with families in mind. Interior staterooms can accommodate up to four passengers, while larger Suites can sleep up to seven. All cabins come equipped with flat-screen TVs, seating areas and classic Disney designs. Recent cruisers noted the expensive cost of a trip on the Disney Wonder, but most felt the quality of service was top-notch."
+        },
+        14 => {
+              ship_name: 'Dream', 
+              ship_url:  'http://chunis.org/images/ships/disneydream1.jpg', 
+              description: "Last renovated in 2015 (after being introduced in 2011), the 4,000-passenger Disney Dream is one of Disney's largest, newest ships. Highlights include the 765-foot AquaDuck water coaster, a virtual sports simulator (for an extra fee) and theatrical performances that bring Disney animated favorites – like 'Beauty and the Beast' – to life.  While the ship emphasizes family-focused entertainment with five specialized kids clubs, parents can enjoy the adults-only Quiet Cove pool and the Senses Spa & Salon. At night, a section of the ship called The District transforms into an adult oasis with host of bars and lounges. In terms of dining, the ship offers nine themed venues including two specialty adults-only restaurants.  Staterooms also cater to cruising clans, offering perks like sofa beds. Over 85 percent of cabins have ocean views or verandas. Those looking for extra space can opt for Concierge Suites, which range from 622 to 1,781 square feet.  While some recent cruisers commented that the ship is more expensive than other mainstream competitors, most said it was well worth the price due to the personalized attention they received from the staff."
+        },
+        15 => {
+              ship_name: 'Fantasy', 
+              ship_url:  'http://chunis.org/images/ships/disneyfantasy1.jpg', 
+              description: "Disney’s newest ship, Disney Fantasy, launched in 2012 and underwent a dry dock in 2017 to introduce new features like the Marvel Super Heroes Academy, a 'Star Wars'-themed command post and a Tiffany & Co. retail store.  Staterooms are designed with families in mind. Inside staterooms can accommodate up to four guests, and over 85 percent of the ship's cabins have an ocean view or a veranda. All cabins are outfitted with flat-screen TVs, minifridges and iPod docking stations.  Onboard entertainment is just as family-oriented, with Goofy’s Sports Deck activity center, a virtual sports simulator (for an extra fee), nightly live performances and 3-D movies. While younger guests play in age-appropriate youth clubs, adults can relax at the Quiet Cove Pool or enjoy an evening at one of the six adults-only bars and lounges.  When it comes to dining, the ship offers 10 themed dining venues, including two adults-only specialty venues, three main dining rooms and a new ice cream shop, Sweet on You."
+        }                    
        }
 }
 

@@ -42,7 +42,7 @@ SHIPS_COLLECTION.each do |cruise_line_id, ships_ids|
     Ship.find_or_create_by!(
       name: ship_data[:ship_name], 
       cruise_line_id: cruise_line_id, 
-      description: Faker::Lorem.paragraph(sentence_count: 10),
+      description: ship_data[:description],
       url: ship_data[:ship_url]
     )
   end
