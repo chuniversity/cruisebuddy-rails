@@ -1,10 +1,5 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
 # p User.find_or_create_by!(email: 'example@mail.com' , password: '123123123' , password_confirmation: '123123123')
 require Rails.root.join('db/seeds_lib', 'cruiselines_data.rb')
@@ -29,7 +24,7 @@ user_profile = UserProfile.find_or_create_by!(ex_email: user.email, first_name: 
 
 #creating additional users
 (2..10).each do |i|
-  email = "example#{1}@mail.com"
+  email = "example#{i}@mail.com"
   user = User.create!(email: email , password: '123123123' , password_confirmation: '123123123')
   UserProfile.find_or_create_by!(ex_email: user.email, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, username: Faker::Internet.username)
 end
