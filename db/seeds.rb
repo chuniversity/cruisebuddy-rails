@@ -7,7 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # p User.find_or_create_by!(email: 'example@mail.com' , password: '123123123' , password_confirmation: '123123123')
-require Rails.root.join('db/seeds_lib', 'seeds_data.rb')
+require Rails.root.join('db/seeds_lib', 'cruiselines_data.rb')
+require Rails.root.join('db/seeds_lib', 'ships_data.rb')
+require Rails.root.join('db/seeds_lib', 'ports_data.rb')
+require Rails.root.join('db/seeds_lib', 'reviews_data.rb')
 require Rails.root.join('db/seeds_lib', 'voyage_record_generation')
 
 def fake_rating
