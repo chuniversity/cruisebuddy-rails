@@ -34,6 +34,13 @@ class ShipsController < ApplicationController
           body: review.body,
           rating: review.rating,
           user_profile: review.user_profile,
+          comments: review.comments.map do |comment|
+            {
+              id: comment.id,
+              body: comment.body,
+              user_profile: comment.user_profile,
+            }
+          end
         }
       end
     }
