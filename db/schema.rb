@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_12_01_172803) do
 
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -110,6 +111,7 @@ ActiveRecord::Schema.define(version: 2019_12_01_172803) do
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "url"
     t.index ["user_id"], name: "index_user_profiles_on_user_id"
   end
 
@@ -128,8 +130,10 @@ ActiveRecord::Schema.define(version: 2019_12_01_172803) do
     t.integer "duration"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "departure_port_id", default: 1
+    t.string "departure_port", default: "1"
     t.integer "price"
+    t.text "ports"
+    t.integer "ship_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
