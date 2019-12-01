@@ -68,5 +68,12 @@ USER_DATA = [
     email:                 'sample9@mail.com',
     first_name             'Susan',
     picture_url            'http://chunis.org/images/users/female7.jpg'
+  },
+  {
+    password:              '123123123',
+    password_confirmation: '123123123',
+    email:                 'sample10@mail.com',
+    first_name             'Lisa',
+    picture_url            'http://chunis.org/images/users/female8.jpg'
   }
 ]
