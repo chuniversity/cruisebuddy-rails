@@ -1,0 +1,7 @@
+<div>
+  <h1>Image page</h1>
+  <% @things.each do |thing| %>
+    <p><%= thing.name %></p>
+    <%= image_tag thing.image %>
+  <% end %>
+</div>

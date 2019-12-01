@@ -1,0 +1,12 @@
+<h1>Form!</h1>
+<%= form_with model: @thing, local: true do |f| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+<% end %> 

@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :ships
   resources :cruise_lines
   resources :user_profiles
+  resources :thing_with_images
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   post 'authenticate', to: 'authentication#authenticate'
 end
