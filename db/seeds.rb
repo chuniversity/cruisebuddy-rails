@@ -6,19 +6,36 @@ require Rails.root.join('db/seeds_lib', 'cruiselines_data.rb')
 require Rails.root.join('db/seeds_lib', 'ships_data.rb')
 require Rails.root.join('db/seeds_lib', 'ports_data.rb')
 require Rails.root.join('db/seeds_lib', 'reviews_data.rb')
-require Rails.root.join('db/seeds_lib', 'voyage_record_generation')
+require Rails.root.join('db/seeds_lib', 'voyage_record_generation.rb')
+require Rails.root.join('db/seeds_lib', 'user_data.rb')
 
 #primary user
-user = User.create!(email: 'example@mail.com' , password: '123123123' , password_confirmation: '123123123')
-user_profile = UserProfile.find_or_create_by!(user: user, ex_email: user.email, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, username: Faker::Internet.username)
+# user = User.create!(email: 'example@mail.com' , password: '123123123' , password_confirmation: '123123123')
+# user_profile = UserProfile.find_or_create_by!(user: user, ex_email: user.email, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, username: Faker::Internet.username)
 
 #creating additional users
-(2..10).each do |i|
-  email = "example#{i}@mail.com"
-  user = User.create!(email: email , password: '123123123' , password_confirmation: '123123123')
-  UserProfile.find_or_create_by!(user: user, ex_email: user.email, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, username: Faker::Internet.username)
-end
+# (2..10).each do |i|
+#   email = "example#{i}@mail.com"
+#   user = User.create!(email: email , password: '123123123' , password_confirmation: '123123123')
+#   UserProfile.find_or_create_by!(user: user, ex_email: user.email, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, username: Faker::Internet.username)
+# end
 
+USER_DATA.each do |datum|
+  last_name = Faker::Name.last_name
+  user = User.create!(
+    email: datum[:email], 
+    password: datum[:password], 
+    password_confirmation: datum[:password_confirmation])
+
+  UserProfile.find_or_create_by!(
+    user: user, 
+    ex_email: user.email, 
+    first_name: datum[:first_name], 
+    last_name: last_name, 
+    username: datum[:first_name] + last_name + '01'
+    )
+
+end
 
 #Cruise lines into db
 CRUISELINES.each do |cruiseline|
