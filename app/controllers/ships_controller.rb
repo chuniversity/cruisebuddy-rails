@@ -27,6 +27,7 @@ class ShipsController < ApplicationController
       name: @ship.name,
       description: @ship.description,
       cruise_line: @ship.cruise_line,
+      voyages: @ship.voyages,
       ship_images: @ship.ship_images.map do |ship_image|
         {
           id: ship_image.id,
