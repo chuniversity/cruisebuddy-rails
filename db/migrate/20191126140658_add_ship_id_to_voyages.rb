@@ -1,5 +1,5 @@
 class AddShipIdToVoyages < ActiveRecord::Migration[6.0]
   def change
-    add_column :voyages, :ship_id, :integer
+    add_reference :voyages, :ship, index: true
   end
 end

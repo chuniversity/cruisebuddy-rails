@@ -132,7 +132,8 @@ ActiveRecord::Schema.define(version: 2019_12_01_183301) do
     t.string "departure_port", default: "1"
     t.integer "price"
     t.text "ports"
-    t.integer "ship_id"
+    t.bigint "ship_id"
+    t.index ["ship_id"], name: "index_voyages_on_ship_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

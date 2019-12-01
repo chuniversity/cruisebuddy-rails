@@ -57,7 +57,7 @@ ShipImage.create(url: 'http://chunis.org/images/ships/horizon10.jpg', ship_id: 1
 #Voyage dates
 voyage_data((1..5),2,[10,14],'Miami') # for Carnival Cruise
 voyage_data((6..11),1,[14,21],'Dover') # for Royal Caribbean
-voyage_data((15..15),3,[3,7],'Miami') # for Disney
+voyage_data((12..15),3,[3,7],'Miami') # for Disney
 #Reviews
 REVIEWS.each do |element|
   Review.find_or_create_by!(
