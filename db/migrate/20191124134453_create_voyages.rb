@@ -5,7 +5,6 @@ class CreateVoyages < ActiveRecord::Migration[6.0]
       t.date :departure_date
       t.date :arrival_date
       t.integer :duration
-
       t.timestamps
     end
   end
