@@ -1,16 +1,49 @@
 class ShipsController < ApplicationController
+  skip_before_action :authenticate_request
   before_action :set_ship, only: [:show, :update, :destroy]
 
   # GET /ships
   def index
     @ships = Ship.all
 
-    render json: @ships
+    render json: {
+      ships: @ships.map do |ship|
+        {
+          id: ship.id,
+          name: ship.name,
+          description: ship.description,
+          url: ship.url,
+          cruise_name: ship.cruise_line,
+          reviews: ship.reviews,
+        }
+      end 
+    }
   end
 
   # GET /ships/1
   def show
-    render json: @ship
+    render json: {
+      id: @ship.id,
+      name: @ship.name,
+      description: @ship.description,
+      cruise_line: @ship.cruise_line,
+      ship_images: @ship.ship_images,
+      reviews: @ship.reviews.preload(:user_profile).map do |review|
+        {
+          id: review.id,
+          body: review.body,
+          rating: review.rating,
+          user_profile: review.user_profile,
+          comments: review.comments.map do |comment|
+            {
+              id: comment.id,
+              body: comment.body,
+              user_profile: comment.user_profile,
+            }
+          end
+        }
+      end
+    }
   end
 
   # POST /ships

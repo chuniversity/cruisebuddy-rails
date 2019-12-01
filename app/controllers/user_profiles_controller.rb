@@ -1,4 +1,5 @@
 class UserProfilesController < ApplicationController
+  skip_before_action :authenticate_request
   before_action :set_user_profile, only: [:show, :update, :destroy]
 
   # GET /user_profiles

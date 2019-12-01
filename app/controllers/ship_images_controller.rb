@@ -1,4 +1,5 @@
 class ShipImagesController < ApplicationController
+    skip_before_action :authenticate_request
   before_action :set_ship_image, only: [:show, :update, :destroy]
 
   # GET /ship_images

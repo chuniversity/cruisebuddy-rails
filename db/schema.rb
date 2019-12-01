@@ -80,8 +80,10 @@ ActiveRecord::Schema.define(version: 2019_11_26_221350) do
     t.string "first_name"
     t.string "last_name"
     t.string "username"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_user_profiles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -113,4 +115,5 @@ ActiveRecord::Schema.define(version: 2019_11_26_221350) do
   add_foreign_key "reviews", "user_profiles"
   add_foreign_key "ship_images", "ships"
   add_foreign_key "ships", "cruise_lines"
+  add_foreign_key "user_profiles", "users"
 end
