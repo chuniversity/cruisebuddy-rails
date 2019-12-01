@@ -61,17 +61,17 @@ REGIONS.each do |region, ports|
   end
 end 
   
-#SHIPEIMAGE HAS AN ERROR
-# ShipImage.create(id: 1, url: 'http://chunis.org/images/ships/horizon1.jpg', ship_id: 1)
-# ShipImage.create(id: 2, url: 'http://chunis.org/images/ships/horizon2.jpg', ship_id: 1)
-# ShipImage.create(id: 3, url: 'http://chunis.org/images/ships/horizon3.jpg', ship_id: 1)
-# ShipImage.create(id: 4, url: 'http://chunis.org/images/ships/horizon4.jpg', ship_id: 1)
-# ShipImage.create(id: 5, url: 'http://chunis.org/images/ships/horizon5.jpg', ship_id: 1)
-# ShipImage.create(id: 6, url: 'http://chunis.org/images/ships/horizon6.jpg', ship_id: 1)
-# ShipImage.create(id: 7, url: 'http://chunis.org/images/ships/horizon7.jpg', ship_id: 1)
-# ShipImage.create(id: 8, url: 'http://chunis.org/images/ships/horizon8.jpg', ship_id: 1)
-# ShipImage.create(id: 9, url: 'http://chunis.org/images/ships/horizon9.jpg', ship_id: 1)
-# ShipImage.create(id: 10, url: 'http://chunis.org/images/ships/horizon10.jpg', ship_id: 1)
+
+ShipImage.create(url: 'http://chunis.org/images/ships/horizon1.jpg', ship_id: 1)
+ShipImage.create(url: 'http://chunis.org/images/ships/horizon2.jpg', ship_id: 1)
+ShipImage.create(url: 'http://chunis.org/images/ships/horizon3.jpg', ship_id: 1)
+ShipImage.create(url: 'http://chunis.org/images/ships/horizon4.jpg', ship_id: 1)
+ShipImage.create(url: 'http://chunis.org/images/ships/horizon5.jpg', ship_id: 1)
+ShipImage.create(url: 'http://chunis.org/images/ships/horizon6.jpg', ship_id: 1)
+ShipImage.create(url: 'http://chunis.org/images/ships/horizon7.jpg', ship_id: 1)
+ShipImage.create(url: 'http://chunis.org/images/ships/horizon8.jpg', ship_id: 1)
+ShipImage.create(url: 'http://chunis.org/images/ships/horizon9.jpg', ship_id: 1)
+ShipImage.create(url: 'http://chunis.org/images/ships/horizon10.jpg', ship_id: 1)
 
 #Voyage dates
 voyage_data((1..5),2,[10,14],'Miami') # for Carnival Cruise
