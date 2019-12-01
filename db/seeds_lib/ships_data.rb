@@ -22,14 +22,14 @@ SHIPS_COLLECTION = {
         },
         5 => {
               ship_name: 'Dream', 
-              ship_url:  'http://chunis.org/images/ships/horizon1.jpg', 
+              ship_url:  'http://chunis.org/images/ships/dream1.jpg', 
               description: "Carnival Dream features the Punchliner Comedy Club, nightly stage shows, age-appropriate kids clubs (for ages 2 to 17) and an onboard water park – all hallmarks of the line's 'Fun Ships.' Other family-friendly entertainment includes movies at the Seaside Theatre and the Seuss at Sea program.  Those more interested in relaxing can enjoy the Cloud 9 Spa and the adults-only Serenity Retreat. In terms of lodging, cruisers can stay in budget-friendly Interior staterooms (185 square feet) or splurge for more room (up to an extra 245 square feet) with an Ocean View or Balcony stateroom or Suite. All cabins are appointed with flat-screen TVs and 24-hour room service. The ship added quite a few dining options in its most recent revamp in 2017, including Guy's Burger Joint, BlueIguana Cantina and Bonsai Sushi. Overall, the food quality on the ship gets mixed reviews. Carnival Dream carries 3,646 passengers and offers a nearly 4-to-1 guest-to-crew ratio, so public areas may be crowded and service can slow at peak times. Recent travelers also warned against choosing a room directly above any of the restaurants or bars, as noise travels easily through the walls."
         }               
         },
   2 => {
         6 => {
               ship_name: 'Freedom of the Seas', 
-              ship_url:  'http://chunis.org/images/ships/freedomoftheseas1.jpg', 
+              ship_url:  'http://chunis.org/images/ships/freedomseas1.jpg', 
               description: "The newly amplified Freedom of the Seas houses 1,360 crew members and a total of 4,515 passengers. Recent updates include a new pool area with nighttime glow-in-the-dark laser tag, fresh dining venues and more. Other highlights include a surf simulator, a rock climbing wall and an ice skating rink. Adults can spend time at the casino and 10 bars and lounges. Freedom of the Seas houses a three-level main restaurant, several casual eateries (including Johnny Rockets and Ben & Jerry's Ice Cream) and three specialty restaurants (for an extra charge). When it comes to lodging, guests can choose from four categories: Interior, Ocean View, Balcony or Suite. All cabins include minibars and LED TVs. Past cruisers recommend springing for a suite if you're traveling with a group, as such rooms offer extras like private balconies and living areas."
         },
         7 => {
