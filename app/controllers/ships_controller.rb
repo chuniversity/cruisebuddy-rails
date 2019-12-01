@@ -27,7 +27,12 @@ class ShipsController < ApplicationController
       name: @ship.name,
       description: @ship.description,
       cruise_line: @ship.cruise_line,
-      ship_images: @ship.ship_images,
+      ship_images: @ship.ship_images.map do |ship_image|
+        {
+          id: ship_image.id,
+          url: ship_image.image.attached? ? url_for(ship_image.image) : ship_image.url,
+        }
+      end,
       reviews: @ship.reviews.preload(:user_profile).map do |review|
         {
           id: review.id,
