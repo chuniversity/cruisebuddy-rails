@@ -7,6 +7,7 @@ require Rails.root.join('db/seeds_lib', 'ports_data.rb')
 require Rails.root.join('db/seeds_lib', 'reviews_data.rb')
 require Rails.root.join('db/seeds_lib', 'voyage_record_generation.rb')
 require Rails.root.join('db/seeds_lib', 'user_data.rb')
+require Rails.root.join('db/seeds_lib', 'ships_images.rb')
 
 USER_DATA.each do |datum|
   last_name = Faker::Name.last_name
@@ -44,20 +45,21 @@ REGIONS.each do |region, ports|
     Port.find_or_create_by!(port_name: port)
   end
 end 
-ShipImage.create(url: 'http://chunis.org/images/ships/horizon1.jpg', ship_id: 1)
-ShipImage.create(url: 'http://chunis.org/images/ships/horizon2.jpg', ship_id: 1)
-ShipImage.create(url: 'http://chunis.org/images/ships/horizon3.jpg', ship_id: 1)
-ShipImage.create(url: 'http://chunis.org/images/ships/horizon4.jpg', ship_id: 1)
-ShipImage.create(url: 'http://chunis.org/images/ships/horizon5.jpg', ship_id: 1)
-ShipImage.create(url: 'http://chunis.org/images/ships/horizon6.jpg', ship_id: 1)
-ShipImage.create(url: 'http://chunis.org/images/ships/horizon7.jpg', ship_id: 1)
-ShipImage.create(url: 'http://chunis.org/images/ships/horizon8.jpg', ship_id: 1)
-ShipImage.create(url: 'http://chunis.org/images/ships/horizon9.jpg', ship_id: 1)
-ShipImage.create(url: 'http://chunis.org/images/ships/horizon10.jpg', ship_id: 1)
+# ShipImage.create(url: 'http://chunis.org/images/ships/horizon1.jpg', ship_id: 1)
+# ShipImage.create(url: 'http://chunis.org/images/ships/horizon2.jpg', ship_id: 1)
+# ShipImage.create(url: 'http://chunis.org/images/ships/horizon3.jpg', ship_id: 1)
+# ShipImage.create(url: 'http://chunis.org/images/ships/horizon4.jpg', ship_id: 1)
+# ShipImage.create(url: 'http://chunis.org/images/ships/horizon5.jpg', ship_id: 1)
+# ShipImage.create(url: 'http://chunis.org/images/ships/horizon6.jpg', ship_id: 1)
+# ShipImage.create(url: 'http://chunis.org/images/ships/horizon7.jpg', ship_id: 1)
+# ShipImage.create(url: 'http://chunis.org/images/ships/horizon8.jpg', ship_id: 1)
+# ShipImage.create(url: 'http://chunis.org/images/ships/horizon9.jpg', ship_id: 1)
+# ShipImage.create(url: 'http://chunis.org/images/ships/horizon10.jpg', ship_id: 1)
 #Voyage dates
 voyage_data((1..5),2,[10,14],'Miami') # for Carnival Cruise
 voyage_data((6..11),1,[14,21],'Dover') # for Royal Caribbean
 voyage_data((12..15),3,[3,7],'Miami') # for Disney
+
 #Reviews
 REVIEWS.each do |element|
   Review.find_or_create_by!(
@@ -67,6 +69,11 @@ REVIEWS.each do |element|
     ship_id: element[:ship_id]
   )
 end
+
+#Ship images
+image_generation()
+
+#Comments
 Comment.create(body: "How crowded was it? All Carnival Cruises tend to be crowded. lol", user_profile_id: 2, review_id: 1,)
 Comment.create(body: "No, this one was more than I've seen it, possibly because it was the beginning of summer", user_profile_id: 1, review_id: 1,)
 Comment.create(body: "How big are the rooms?", user_profile_id: 3, review_id: 1,)
