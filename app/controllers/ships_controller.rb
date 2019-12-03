@@ -1,5 +1,5 @@
 class ShipsController < ApplicationController
-  skip_before_action :authenticate_request
+  skip_before_action :authenticate_request, only: [:index, :show]
   before_action :set_ship, only: [:show, :update, :destroy]
 
   # GET /ships
