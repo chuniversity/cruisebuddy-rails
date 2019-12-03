@@ -5,9 +5,7 @@ class ShipsController < ApplicationController
   # GET /ships
   def index
     @ships = Ship.all
-    p params
-    @ships = @ships.paginate(page: params[:page], per_page: 5)
-
+ 
     render json: {
       ships: @ships.map do |ship|
         {
