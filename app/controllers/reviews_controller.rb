@@ -18,11 +18,11 @@ class ReviewsController < ApplicationController
   def create
     ship = Ship.find_by(name: params[:ship][:shipName])
     ship_image = params[:ship][:shipImage];
-    new_image = ship.ship_images.create(ship: ship, image: ship_image)
     @review = Review.new(review_params)
     @review.ship = ship
     @review.user_profile = @current_user.user_profile
     @review.save
+    ship.ship_images.create(review: @review, ship: ship, image: ship_image) if !ship_image.blank?
     if @review.save
       render json: @review, status: :created, location: @review
     else

@@ -5,6 +5,8 @@ class ShipsController < ApplicationController
   # GET /ships
   def index
     @ships = Ship.all
+    p params
+    @ships = @ships.paginate(page: params[:page], per_page: 5)
 
     render json: {
       ships: @ships.map do |ship|
@@ -35,11 +37,13 @@ class ShipsController < ApplicationController
         }
       end,
       reviews: @ship.reviews.preload(:user_profile).map do |review|
+        review_image = review.ship_image
         {
           id: review.id,
           body: review.body,
           rating: review.rating,
           user_profile: review.user_profile,
+          ship_image: review_image&.image&.attached? ? url_for(review_image.image) : review_image&.url,
           comments: review.comments.map do |comment|
             {
               id: comment.id,
