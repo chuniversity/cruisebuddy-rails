@@ -81,8 +81,10 @@ ActiveRecord::Schema.define(version: 2019_12_01_183301) do
   create_table "ship_images", force: :cascade do |t|
     t.string "url"
     t.bigint "ship_id", null: false
+    t.bigint "review_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["review_id"], name: "index_ship_images_on_review_id"
     t.index ["ship_id"], name: "index_ship_images_on_ship_id"
   end
 
@@ -143,6 +145,7 @@ ActiveRecord::Schema.define(version: 2019_12_01_183301) do
   add_foreign_key "helpfuls", "user_profiles"
   add_foreign_key "reviews", "ships"
   add_foreign_key "reviews", "user_profiles"
+  add_foreign_key "ship_images", "reviews"
   add_foreign_key "ship_images", "ships"
   add_foreign_key "ships", "cruise_lines"
   add_foreign_key "user_profiles", "users"
