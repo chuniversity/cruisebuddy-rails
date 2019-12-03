@@ -2,7 +2,7 @@ USER_DATA = [
   {
     password:              '123123123',
     password_confirmation: '123123123',
-    email:                 'sample@mail.com',
+    email:                 'example@mail.com',
     first_name:             'Natalia',
     picture_url:            'http://chunis.org/images/users/female1.jpg'
   },
