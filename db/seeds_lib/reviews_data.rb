@@ -6,7 +6,7 @@ REVIEWS = [
     ship_id: 1
   },
   {
-    body: "We chose this ship because of the Havana Suites and what it had to offer. Im not sure why so many people didnt like the new elevators, we found them them to be great and easy to use. Our Havana suite was wonderful, steward was ok but not fantastic as we had hoped. The food was very good and plenty of options, so not sure why some reviews were so negative. Cookie, the cruise director was wonderful , he was so much fun in everything he did. Our next cruise will be on the Glory as that is where Cookie will be next. All in all we had a wonderful trip and are looking forward to our next one. We have cruised Carnival the most and have tried Royal Carib. ( beautiful ship but too big for us) and NCL ( run down ship and a different type of cruiser than we are used to) , We always go back to Carnival. Please take the negative reviews with a grain of salt, we all have different opinions and the trip will be what you make of it .. ENJOY !!!",
+    body: "We chose this ship because of the Havana Suites and what it had to offer. Im not sure why so many people didnt like the new elevators, we found them them to be great and easy to use. Our Havana suite was wonderful, steward was ok but not fantastic as we had hoped. The food was very good and plenty of options, so not sure why some reviews were so negative. Cookie, the cruise director was wonderful , he was so much fun in everything he did. Our next cruise will be on the Glory as that is where Cookie will be next. All in all we had a wonderful trip and are looking forward to our next one. We have cruised Carnival the most and have tried Royal Carib. ( beautiful ship but too big for us) and NCL ( run down ship and a different type of cruiser than we are used to) , We always go back to Carnival. Please take the negative reviews with a grain of salt, we all have different opinions and the trip will be what you make of it. I had fun on this cruise as well as my whole family .. ENJOY !!!",
     rating: 5, 
     user_profile_id: 4, 
     ship_id: 1 
@@ -43,37 +43,37 @@ REVIEWS = [
   },
   {
     body: "I picked this cruise for the date and the itinerary. The price was great. We spent the day before looking around San Juan and loved Old San Juan. This was a special trip with my 2 teenage daughters. Last year I took my younger daughter on our first cruise. Getting my other girl to go with us was a joy. After hearing all about our cruise she was excited to join us this time. Freedom didn't disappoint. Our first site of that huge ship was awesome. Our arrival at the port could not have gone quicker. We were on board by 1 pm and started looking around all the decks. Lunch in Windjammer and drinks by the pool. Our room was a 6th deck balcony and was ready by 3 pm. It was great. Things might be worn but it was all good. We thought it was the room of our dreams. Our room attendant was Winsome from Jamaica? And she was a daily gift. I could not have asked for more. Dining in the main dining room was a fun, elegant time for us. We had great diner mates from Dallas and Columbus. The only meal we did not love was the lasagna. The staff all seemed to enjoy helping us have fun.", 
-    rating: 4, 
+    rating: 5, 
     user_profile_id: 1, 
     ship_id: 6
   },
   {
-    body: "We were a group of 4 friends who flew over from the UK to sail on the Liberty departing on the 10th November from Galveston, looking for some winter warmth and sunshine and a lot of fun. My partner and I had sailed with RC before, however for our friends, who have sailed on other cruise lines before, this was the first time on RC.  What has prompted me to write this review is the OUTSTANDING service we had on this ship. As written in other reviews, yes the ship is older than the newer generation ships and parts of it are looking dated, however it was kept immaculately clean, it is a well designed and easy to navigate ship and the entertainment and activities on offer are numerous and generally very good. Food in the buffet and main dining room was excellent and the drinks served were absolutely fine. No problem at all getting a sun lounger even on sea days, great pools, well equipped gym and the waterslides were great - we really loved the tidal wave!", 
-    rating: 4,
+    body: "We were a group of 4 friends who flew over from the UK to sail on the Liberty departing on the 10th November from Galveston, looking for some winter warmth and sunshine and a lot of fun. My partner and I had sailed with RC before, however for our friends, who have sailed on other cruise lines before, this was the first time on RC.  What has prompted me to write this review is the OUTSTANDING service we had on this ship. As written in other reviews, yes the ship is older than the newer generation ships and parts of it are looking dated, however it was kept immaculately clean, it is a well designed and easy to navigate ship and the entertainment and activities on offer are numerous and generally very good. Food in the buffet and main dining room was excellent and the drinks served were absolutely fine. No problem at all getting a sun lounger even on sea days, great pools, well equipped gym and the waterslides were great - my family really loved the tidal wave!", 
+    rating: 5,
     user_profile_id: 1, 
     ship_id: 7
   },
   {
-    body: "We went on the Symphony of the Seas with my husband and two friends and we had a wonderful week. We have sailed with Royal about 15 times and have most of the larger ships but first time on the Symphony. We choose an inside cabin because we knew that we were never going to be in the room. Embarkation was very easy with the We enjoyed two of the specialty restaurants, Chops and Jaime's Italian. We had anytime dining but had reservations and were able to get our same table every night that we are in the main dining room. Lourdes and Sonny were incredible. We did not have enough time to do everything and could have stayed on the ship for another week. Even though there were over 5000 people on board the only time it ever felt crowded was the first day at the windjammer buffet and a few times at dinner when you are waiting in line. Make sure you reserve your shows and dinner times on line and you will not have a problem. My favorite show was the comedy and the ice show but all the entertainment was great. The port were not great but you do not even need to get off the ship.I can't wait to go on this ship again.", 
+    body: "We went on the Symphony of the Seas with my husband and two friends and we had a wonderful week. We have sailed with Royal about 15 times and have most of the larger ships but first time on the Symphony. We choose an inside cabin because we knew that we were never going to be in the room. Embarkation was very easy with the We enjoyed two of the specialty restaurants, Chops and Jaime's Italian. We had anytime dining but had reservations and were able to get our same table every night that we are in the main dining room. Lourdes and Sonny were incredible. We did not have enough time to do everything and could have stayed on the ship for another week. Even though there were over 5000 people on board the only time it ever felt crowded was the first day at the windjammer buffet and a few times at dinner when you are waiting in line. Make sure you reserve your shows and dinner times on line and you will not have a problem. My favorite show was the comedy and the ice show but all the entertainment was great for my family. The port were not great but you do not even need to get off the ship.I can't wait to go on this ship again.", 
     rating: 5, 
     user_profile_id: 1, 
     ship_id: 8
   },
   {
-    body: "From a very speedy embarkation through to the just as speedy disembarkation the week was great. We never had a bad meal and our very picky teenager always found something to eat. We did my time dining and the food and service was excellent. Plenty to do on board for the kids as well as the adults. The ship never felt overcrowded even when we had a day of rain, so many places for people to disperse to. Never had a problem getting a bed round the pool and the shop was at capacity.", 
+    body: "From a very speedy embarkation through to the just as speedy disembarkation the week was great. We never had a bad meal and our very picky teenager in our family always found something to eat. We did my time dining and the food and service was excellent. Plenty to do on board for the kids as well as the adults. The ship never felt overcrowded even when we had a day of rain, so many places for people to disperse to. Never had a problem getting a bed round the pool and the shop was at capacity.", 
     rating: 5, 
     user_profile_id: 1, 
     ship_id: 9
   },
   {
-    body: "This was our first Royal Caribbean cruise and we were attracted by both the opportunity to be on one of the largest ships at sea and by the . Before booking and then for almost every day before sailing we researched the ship, looked at other reviews and spoke with the travel agent about what to expect. We were concerned about a number of reviews that referenced a tired ship and about Royal Caribbean's reported practice of 'nickel and diming' guests to extort as much additional money as possible. I absolutely have to address these issues because they are absolutely not our experience. The ship is overwhelmingly big but it is in beautiful order. Yes there is some upgrade necessary. If you are the type of guest who will obsess about handrails that have been bleached by the sun and are in need of sanding and re-varnishing then look elsewhere because your holiday may be ruined! Otherwise, have no fears - it's spotlessly clean, the staff are friendly and attentive and there is much to do. Not once were we approached about upgrades or trips, nor were we pushed for additional tipping or anything else.", 
-    rating: 4, 
+    body: "This was our first Royal Caribbean cruise and we were attracted by both the opportunity to be on one of the largest ships at sea and by the . Before booking and then for almost every day before sailing we researched the ship, looked at other reviews and spoke with the travel agent about what to expect. We were concerned about a number of reviews that referenced a tired ship and about Royal Caribbean's reported practice of 'nickel and diming' guests to extort as much additional money as possible. I absolutely have to address these issues because they are absolutely not our experience. The ship is overwhelmingly big but it is in beautiful order. Yes there is some upgrade necessary. If you are the type of guest who will obsess about handrails that have been bleached by the sun and are in need of sanding and re-varnishing then look elsewhere because your holiday may be ruined! Otherwise, have no fears - it's spotlessly clean, the staff are friendly and attentive and there is much to do. My whole family enjoyed it. Not once were we approached about upgrades or trips, nor were we pushed for additional tipping or anything else.", 
+    rating: 5, 
     user_profile_id: 1, 
     ship_id: 10
   },
   {
     body: "'ve been on a lot of cruise with different cruise lines but this is the best, so far. Was on the ship eating lunch at 11:00 even though cabins weren't ready till 1:00. Ship is enormous with over 5500 passengers but it didn't seem crowded. We had a balcony cabin that was ocean view. Crew was very friendly. No issues with any member. Only saw the cruise director 1 time and that was at an evening show. Entertainment was very good..", 
-    rating: 4, 
+    rating: 5, 
     user_profile_id: 1, 
     ship_id: 11
   },
@@ -90,14 +90,38 @@ REVIEWS = [
     ship_id: 13
   },
   {
-    body: "I chose Disney because of the rave reviews that I had researched and heard about from friends and acquaintances. In general, my family and I had a great time. The services and staff were great and very accommodating when things didn’t work as expected like trying to dial ship to shore from my stateroom. The ship is impeccably well maintained and clean and there is plenty for passengers of all ages to do during the voyage. My only criticism is that while the food was good, some of the dishes could have been served hotter than they were. I realize they are serving the masses, but the hot entrees should not arrive cool or cold to passengers. If the time duration from the stove top to the passenger was reduced, I think I would rate the food as great to outstanding. Nevertheless, I would not hesitate to travel again with Disney and hope to do so very soon.", rating: 4, 
+    body: "I chose Disney because of the rave reviews that I had researched and heard about from friends and acquaintances. In general, my family and I had a great time. The services and staff were great and very accommodating when things didn’t work as expected like trying to dial ship to shore from my stateroom. It was great for my wole family.  The ship is impeccably well maintained and clean and there is plenty for passengers of all ages to do during the voyage. My only criticism is that while the food was good, some of the dishes could have been served hotter than they were. I realize they are serving the masses, but the hot entrees should not arrive cool or cold to passengers. If the time duration from the stove top to the passenger was reduced, I think I would rate the food as great to outstanding. Nevertheless, I would not hesitate to travel again with Disney and hope to do so very soon.", rating: 4, 
     user_profile_id: 1, 
     ship_id: 14
   },
   {
-    body: "We chose this cruise because our 3 year old grand-daughter is obsessed with Disney. Our Grand-daughter enjoyed this cruise and overall I thought it was a good solid cruise experience. However, I did not feel it was a good value for the money and overall it was just ok. For what I paid for this cruise, it should have been extraordinary and it just wasn't. We were on the eight day Halloween on the High Seas cruise. I'll try to lay out each aspect and describe what I thought was good and bad. We are frequent cruisers, primarily on RCCL, but have cruise most of the other lines as well.", 
+    body: "We chose this cruise because our 3 year old grand-daughter is obsessed with Disney, as well as our whole family. Our Grand-daughter enjoyed this cruise and overall I thought it was a good solid cruise experience. However, I did not feel it was a good value for the money and overall it was just ok. For what I paid for this cruise, it should have been extraordinary and it just wasn't. We were on the eight day Halloween on the High Seas cruise. I'll try to lay out each aspect and describe what I thought was good and bad. We are frequent cruisers, primarily on RCCL, but have cruise most of the other lines as well.", 
     rating: 4, 
     user_profile_id: 1, 
     ship_id: 15
+  },
+  {
+    body: "Picked symphony because we wanted to be on a big ship with more to do with kids. The ship is amazing, spotless. Never felt crowded except first day boarding the ship. Would avoid wind jammer and eat elsewhere first day. Shows were all amazing, didn’t go to specialty restaurants because food I’m main dining room was excellent. I read negative reviews prior to going on this trip which worried me. Not sure what ship they were on. Would go on symphony again in a heart beat. The diving show was definitely a high light of the trip as well as Flight. We went to Tabyana beach in Roatan. Beautiful beach until noon and than garbage was washing up on shore. Pill bottles, old shoes, etc they said vans would take us back to ship on the hour got there at 2:45 waited until 4:00 for van. Took taxi to beach in Costa Maya was very nice day spent on beach. Got off ship and just did some shopping in Cozumel. Cococay is amazing", 
+    rating: 5, 
+    user_profile_id: 3, 
+    ship_id: 8
+  },
+  {
+    body: "50th birthday Presidents cruise. Friends told us about the excellent entertainment. And it was. Disappointed with Hall and Oates having to see the at the Aqua Theater Screen. They made such a thing about the surprise entertainment never saying that would only be for the Diamond Plus and above. I'm sure there were a lot of people upset. It should have been mentioned beforehand, but that would mean that some people would have dropped out. Other than that, it was a great cruise. Gifts every night celebrating 50 years. I always found a pool chair and towel. Even at Coco Cay. Many chairs available with umbrella. I would have stayed another day at Coco Cay, it was just so beautiful. Food was excellent also. We went to the Fresh Water Lagoon, did not do the Water Park (not my thing, but looked exciting for those young at heart and body)", 
+    rating: 5, 
+    user_profile_id: 4, 
+    ship_id: 8
+  },
+  {
+    body: "We booked this cruise well in advance after accidentally hearing about this once in a lifetime cruise with President Michael Bayley on their newest, biggest ship. It did not disappoint. We expected a great celebration and special events, but we did not envision that every day would be another surprise. Mr. Bayley was very accessible throughout the ship and conducted a question answer session that went for about two hours in a packed theatre. Drawings were held for quite fantastic prizes like free airfare and cruises, as well special logo merchandise commemorating this special cruise event. We even voted on the next years presidents cruise! Each night in our cabin we were surprised with a free gift such as logo caps, beach towels, fleece blankets and even a retro coupon book like used to be used instead of adding specials onto your Sea Pass card. These were all top quality gifts, nothing cheap here.", 
+    rating: 5, 
+    user_profile_id: 5, 
+    ship_id: 8
+  },
+  {
+    body: "Very excited when I booked the President’s cruise about 2 months ago......made all the reservations right away, enjoyed GREAT entertainment as well as the bonus venues for the special sailing and the nice gifts delivered to our stateroom. Royal did a great job of trying to accommodate ALL the top tier cruisers, with extra staff, lounge spaces, etc. The lines were not a pleasant experience, but unavoidable. We had a Great Day at Coco Cay just doing all the free stuff, arrived early, plenty of chairs and umbrellas, delicious food available and the water was clear and full of fish.....heading back in Feb for the Thrill Park. Our only negative for the sailing was with our room, not being ready until after 2:00 on embarkation and not serviced for 2 days.....Guest relations was amazing though when it was mentioned to them, even a visit from the head of housekeeping. My photo with Michael Bailey is my best souvenir!", 
+    rating: 5, 
+    user_profile_id: 6, 
+    ship_id: 8
   }
 ]

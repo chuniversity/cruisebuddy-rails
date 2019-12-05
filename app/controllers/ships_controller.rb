@@ -40,12 +40,14 @@ class ShipsController < ApplicationController
           id: review.id,
           body: review.body,
           rating: review.rating,
+          created_at: review.created_at.strftime("%m/%d/%Y"),
           user_profile: review.user_profile,
           ship_image: review_image&.image&.attached? ? url_for(review_image.image) : review_image&.url,
           comments: review.comments.map do |comment|
             {
               id: comment.id,
               body: comment.body,
+              created_at: comment.created_at.strftime("%m/%d/%Y"),
               user_profile: comment.user_profile,
             }
           end
