@@ -1,24 +1,7 @@
-# README
+# Cruise Buddy Rails App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the back end application for the proof of concept app: Cruise Buddy. 
 
-Things you may want to cover:
+Technologies used: Ruby, Ruby on Rails, PostgreSQL. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://www.cruisebuddy.app/
